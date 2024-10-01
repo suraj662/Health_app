@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthArticlesActivity"
+    android:background="@drawable/orderback">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B99CD6CC"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-55dp">
+
+        <TextView
+            android:id="@+id/tv247"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Healthify 24 x 7 Solution"
+            android:textAlignment="center"
+            android:textColor="#172469"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="100dp" />
+
+        <TextView
+            android:id="@+id/tvha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Health Articles"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tv247"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="162dp" />
+
+        <ListView
+            android:id="@+id/listhealth"
+            android:layout_width="350dp"
+            android:layout_height="520dp"
+            android:layout_marginTop="10dp"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="141dp"
+            android:background="#60FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/tvha" />
+
+        <Button
+            android:id="@+id/btnbackHA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center"
+            android:text="Back"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.69" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

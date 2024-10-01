@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartBuyMedActivity"
+    android:background="@drawable/orderback">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B99CD6CC"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-55dp">
+
+        <TextView
+            android:id="@+id/tvtitlecartitemBM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Healthify 24 x 7 Solution"
+            android:textAlignment="center"
+            android:textColor="#172469"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="100dp" />
+
+        <TextView
+            android:id="@+id/tvlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Location : Vadodara"
+            android:textColor="#360942"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvtitlecartitemBM"
+            app:layout_constraintVertical_bias="0.019999998" />
+
+        <TextView
+            android:id="@+id/tvcartitemsBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart Items"
+            android:textColor="#2948A4"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvlocation"
+            app:layout_constraintVertical_bias="0.019999998" />
+
+        <ListView
+            android:id="@+id/listViewcartitemsBM"
+            android:layout_width="397dp"
+            android:layout_height="404dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="75dp"
+            android:background="#64FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvcartitemsBM"
+            app:layout_constraintVertical_bias="0.122" />
+
+        <TextView
+            android:id="@+id/tvtotcostBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Total Cost : _ _ _ _ /-"
+            android:textColor="#3A62B7"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/listViewcartitemsBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvseldateBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:text="Select Date"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@id/tvtotcostBM"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Button
+            android:id="@+id/btnseldateBM"
+            style="?android:spinnerStyle"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="50dp"
+            android:text="26/07/2003    "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@id/tvseldateBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvtotcostBM" />
+
+        <Button
+            android:id="@+id/buttoncartBackBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center"
+            android:text="BACK"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintLeft_toRightOf="@id/btncheckoutBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnseldateBM" />
+
+        <Button
+            android:id="@+id/btncheckoutBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center"
+            android:text="Checkout"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvseldateBM"
+             app:layout_constraintLeft_toLeftOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
